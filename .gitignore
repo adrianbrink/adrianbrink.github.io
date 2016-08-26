@@ -1,5 +1,5 @@
-
-# Created by https://www.gitignore.io/api/jekyll,osx,git
+### Custom ###
+assets/sass/
 
 ### Jekyll ###
 _site/

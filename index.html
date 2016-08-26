@@ -1,42 +1,47 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Adrian Brink</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-<section>
-    <div class="jumbotron">
-        <div class="container">
-            {{site.description}}
-        </div>
-    </div>
-</section>
+				<!-- Header -->
+					<header id="header">
+						<h1>Adrian Brink</h1>
+						<p>CTO at AvoGenie &nbsp;&bull;&nbsp; Entrepreneur &nbsp;&bull;&nbsp; Coder</p>
+						<nav>
+							<ul>
+                                <li><a href="https://twitter.com/adrian_brink" target="_blank" class="icon fa-rss"><span class="label">Blog</span></a></li>
+                                <li><a href="https://github.com/adrianbrink" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://twitter.com/adrian_brink" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/adrian.brink.3" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="mailto:adrian@brink-holdings.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-<section id="page-content">
-    <div class="container">
-        <div class="post-list">
-            {%  for post in site.posts %}
-            <div class="post-box">
-                <div class="post-title">
-                    <a class="post-title" href="{{post.url | prepend:site.baseurl }}" > {{ post.title }}</a>
-                </div>
-                <div class="post-excerpt">
-                    {{ post.content | strip_html | truncatewords:20}}
-                </div>
-                <div class="posted">
-                    posted on
-                    <span class="posted-on">
-                        {{ post.date | date: "%A, %B %-d, %Y" }}
-                    </span>
-                    <span class="in">
-                        in
-                    </span>
-                    <span class="categories-on">
-                        {% for category in post.categories%}
-                        {{category}} &nbsp;{% if forloop.last %}{% else %},{% endif %}
-                        {% endfor %}
-                    </span>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Adrian Brink</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
