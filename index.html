@@ -1,60 +1,157 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Adrian Brink</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-        <!-- Google Analytics -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-41671498-6', 'auto');
-            ga('send', 'pageview');
-        </script>
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Adrian Brink</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Adrian Brink</h1>
-						<p>Core Developer & Head of Community @ Tendermint & Cosmos Network</p>
-						<nav>
-							<ul>
-                <li><a href="https://blog.adrianbrink.com" class="icon fa-rss"><span class="label">Blog</span></a></li>
-                <li><a href="https://keybase.io/adrianbrink" class="icon fa fa-key"><span class="label">Keybase</span></a></li>
-                <li><a href="https://github.com/adrianbrink" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://twitter.com/adrian_brink" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.youtube.com/channel/UClixVnv_ZKi7TYhDSy5Je4Q" target="_blank" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-                <li><a href="https://medium.com/@adrian_brink"  target="_blank"  class="icon fa-medium"><span class="label">Medium</span></a></li>
-                <li><a href="https://www.linkedin.com/in/adrianbrink/" target="_blank" class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
-								<li><a href="mailto:adrian@brink-holdings.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Adrian Brink</span>
-					</footer>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet" type="text/css">
+  
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%">
+            <img src="images/adrian-pic.png" class="image-cropper" />
+
+        <h1>Adrian Brink</h1>
+        <h5>Tendermint & Cosmos Network</h5>
+        <p>Core Developer, Head of Community & Partnerships</a></p>
+        <a href="https://github.com/adrianbrink" class="fa fa-github"></a>
+        <a href="https://medium.com/@adrian_brink" class="fa fa-medium"></a>
+        <a href="https://twitter.com/adrian_brink" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/adrianbrink/" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+      <!-- Publications List
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <h3>Publications</h3>
+  <!-- columns should be the immediate child of a .row -->
+  <div class="row">
+      <div class="ten columns">
+          <ul>
+              <p>Introducing Ethermint — Part 1</p>
+              <p>Introducing Basecoin Testnets</p>
+              <p>Join VENUS, the new Ethermint Testnet — Part 3</p>
+              <p>Quickstart Guide — Connecting to the Latest Testnet</p>
+            </ul>
+      </div>
+      <div class="two columns">
+          <p><a href="https://medium.com/@adrian_brink/introducing-ethermint-4551ff5aece2">Article</a></p>
+          <p><a href="https://blog.cosmos.network/introducing-basecoin-testnets-96d5f9e52e1f">Article</a></p>
+          <p><a href="https://blog.cosmos.network/join-venus-the-new-ethermint-testnet-part-3-8e30c7d5abcf">Article</a></p>
+          <p><a href="https://blog.cosmos.network/quickstart-guide-connecting-to-the-latest-testnet-57568e2d6b9">Article</a></p>
+        </div>
+    </div>
+    
+      <!-- Upcoming events table
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <h3>Upcoming Talks</h3>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Topic</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>16th April 2018</td>
+          <td>DAPP Development</td>
+          <td><a href="http://dappdev.org/conference/">DAPP DEV Conference</a></td>
+          <td>Kyiv</td>
+        </tr>
+        <tr>
+          <td>19th April 2018</td>
+          <td>Scaling with Cosmos</td>
+          <td><a href="https://www.meetup.com/FintechTuesday/events/248299967/">Tendermint - Scaling blockchains with Cosmos. A developer deep dive!</a></td>
+          <td>London</td>
+        </tr>
+        <tr>
+            <td>3rd May 2018</td>
+            <td>The IBC Protocol</td>
+            <td><a href="https://edcon.io">Community Ethereum Development Conference</a></td>
+            <td>Toronto</td>
+          </tr>
+      </tbody>
+    </table>
+
+      <!-- Past events table
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <h3>Past Talks</h3>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Topic</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>5th April 2018</td>
+            <td>The InterBlockChain Protocol</td>
+            <td>Decentralize SG</td>
+            <td>Singapore</td>
+          </tr>
+        
+        <tr>
+            <td>23rd March 2018</td>
+            <td>4 Dimensional Scaling with Tendermint and Cosmos</td>
+            <td>ZK Summit</td>
+            <td>Berlin</td>
+          </tr>
+        <tr>
+            <td>10th March 2018</td>
+            <td>3 Dimensional Scaling with Tendermint and Cosmos</td>
+            <td>ETHCC</td>
+            <td>Paris</td>
+          </tr>
+       
+         <tr>
+          <td>12th July 2017</td>
+          <td>The Cosmos Project</td>
+          <td>Blockchain ecosystem</td>
+          <td>London</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>PGP Key</h4>
+    <!-- Standard buttons -->
+    <a class="button" href="files/mypubkey.asc">View</a>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
