@@ -126,7 +126,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Cormorant Garamond', serif;
-  color: #222; }
+  color: #222;
+  margin-bottom: 5% }
 
 
 /* Typography
@@ -207,8 +208,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #20B2AA;
+  border-color: #20B2AA; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
