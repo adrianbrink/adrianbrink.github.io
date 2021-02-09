@@ -1,7 +1,19 @@
 ---
 layout: default
+title: Home
 ---
-<div class="posts">
-      {% for post in site.posts %}{% if post.hidden != true %}<a href="sample.html" class="post-link">{{ post.title }}</a>
-      {% endif %}{% endfor %}
-</div>
+
+<header>
+  <p class="username"><a href="./" target="_self">Adrian Brink</a></p>
+</header>
+<main>
+  {% for post in site.posts %}
+    <article>
+      <header class="heading">
+        <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a> </h1>
+        <p class="timestamp">{{ post.date | date: "%b %e %Y" }}</p>
+      </header>
+    </article>
+  {% endfor %}
+</main>
+<footer><a href="/">blog</a> &nbsp;<a href="/about">about</a> &nbsp;<a href="https://twitter.com/adrian_brink">twitter</a> &nbsp;<a href="https://github.com/adrianbrink">github</a></footer>
